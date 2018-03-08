@@ -1,3 +1,3 @@
 # CRUD
 
-Mi base de datos será de coches deportivos (Ferrari, Lamborghini, Aston Martin, Porsche, etc.)
+La temática de mi CRUD será de coches superdeportivos (Ferrari, Lamborghini, Bugatti, Porsche, etc.)
