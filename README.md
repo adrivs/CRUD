@@ -1,3 +1,3 @@
 # CRUD
 
-La temática de mi CRUD será de coches superdeportivos (Ferrari, Lamborghini, Bugatti, Porsche, etc.)
+La temática de mi CRUD será de guitarras (Gibson, Fender, PRS, Jackson, etc.)
