@@ -1,3 +1,3 @@
 # CRUD
 
-La temática de mi CRUD será de guitarras (Gibson, Fender, PRS, Jackson, etc.)
+Con este CRUD podrás administrarte tu colección de guitarra. 
