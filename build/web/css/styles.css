@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23-abr-2018, 0:04:22
+    Author     : Adri
+*/
+
+body {
+    background: #FEF2BF;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.panel-heading {
+    background-color: red;
+}
+
+.intro {
+    background: white;
+    border: 1px solid black;
+    margin-top: 250px;
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.panel-primary > .panel-heading {
+    background: #429FFD;
+}
