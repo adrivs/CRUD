@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 
 body {
-    background: #FEF2BF;
+    
     font-family: 'Do Hyeon', sans-serif;
 }
 
@@ -18,21 +18,41 @@ body {
 }
 
 .intro {
-    background: white;
+    background: rgb(255,255,255,0.7);
     border: 1px solid black;
     margin-top: 250px;
     text-align: center;
 }
 
 a {
-    color: black;
+   color: rgb(218,165,32);
 }
 
 a:hover {
     text-decoration: none;
-    color: black;
+    color: rgb(218,165,32);
 }
 
 .panel-primary > .panel-heading {
-    background: #429FFD;
+   background: rgb(218,165,32);
+   border: none;
 }
+
+.guitBody, .colBody {
+    background: url('../images/fondoSecciones.jpg');
+    background-size: cover;
+}
+
+table {
+    border: none;
+}
+
+
+
+.mod {
+    color: black;
+    margin-top: 5px;
+}
+
+
+

@@ -22,12 +22,12 @@
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <title>Modifica una guitarra</title>
 </head>
-<body class="mainBody modifica">
+<body class="guitBody">
 <% request.setCharacterEncoding("UTF-8"); %>
 <div class="container">
 <br><br>
 <div class="panel panel-info">
-<div class="panel-heading text-center">Modificación de guitarra</div>
+    <div class="panel-heading text-center" style="background: rgb(218,165,32);"><p class="mod"> Modificación de guitarra</p></div>
 <form method="get" action="grabaGuitarraModificada.jsp">
 <div class="form-group">
 <label>&nbsp;&nbsp;Nº de serie:&nbsp;</label><input type="text" size="5" name="numSerie" value="<%= request.getParameter("numSerie") %>">

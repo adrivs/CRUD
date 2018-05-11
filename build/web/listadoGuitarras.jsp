@@ -21,7 +21,7 @@
         <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
         <title>Listado de guitarras</title>
     </head>
-    <body class="mainBody">
+    <body class="guitBody">
         <div class="container">
             <br><br>   
             <div class="panel panel-primary">

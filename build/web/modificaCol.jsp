@@ -22,12 +22,12 @@
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <title>Modifica un usuario</title>
 </head>
-<body class="mainBody modifica">
+<body class="guitBody">
 <% request.setCharacterEncoding("UTF-8"); %>
 <div class="container">
 <br><br>
 <div class="panel panel-info">
-<div class="panel-heading text-center">Modificación de usuario</div>
+    <div class="panel-heading text-center" style="background: rgb(218,165,32);"><p class="mod"> Modificación de usuario</p></div>
 <form method="get" action="grabaColModificado.jsp">
 <div class="form-group">
 <label>&nbsp;&nbsp;Código:&nbsp;</label><input type="text" size="5" name="codigo" value="<%= request.getParameter("codigo") %>">

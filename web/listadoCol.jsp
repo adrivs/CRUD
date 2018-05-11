@@ -21,7 +21,7 @@
         <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
         <title>Listado de usuarios</title>
     </head>
-    <body class="mainBody">
+    <body class="colBody">
         <div class="container">
             <br><br>   
             <div class="panel panel-primary">
