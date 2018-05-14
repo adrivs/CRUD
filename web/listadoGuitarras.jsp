@@ -40,7 +40,7 @@
                     <tr><th>Nº de serie</th><th>Marca</th><th>Modelo</th><th>Año</th></tr>
                     <form method="get" action="grabaGuitarra.jsp">
                         <tr>
-                            <td><input type="number" name="numSerie" size="40"></td>
+                            <td><input type="number" name="numSerie" size="40" required></td>
                             <td><input type="text" name="marca" size="40"></td>
                             <td><input type="text" name="modelo" size="40"></td>
                             <td><input type="number" name="anyo" size="11" min="1950" max="2025"></td>

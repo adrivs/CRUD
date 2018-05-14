@@ -11,7 +11,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="css/estilonuevo.css" rel="stylesheet"/>
+        <link href="css/loginstyle.css" rel="stylesheet"/>
+         <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
         <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
     </head>
     <body>
@@ -32,12 +33,12 @@
                     response.sendRedirect("guitOrCol.jsp");
 
                 } else {
-                    out.println("<div class='alert alert-success' role='alert'>Contraseña incorrecta</div>");
-                    out.println("<a href='index.jsp' class='btn btn-primary'><span class='glyphicon glyphicon-home'></span> Volver </button></a>");
+                    out.println("<div class='alert alert-success error' role='alert'><p>Contraseña incorrecta</p></div>");
+                    out.println("<a href='index.jsp' class='btn btn-primary aerror'><span class='glyphicon glyphicon-home'></span> Volver </button></a>");
                 }
             } else {
-                out.println("<div class='alert alert-success' role='alert'>El usuario no existe</div>");
-                out.println("<a href='index.jsp' class='btn btn-primary'><span class='glyphicon glyphicon-home'></span> Volver </button></a>");
+                out.println("<div class='alert alert-success error' role='alert'><p>El usuario no existe</p></div>");
+                out.println("<a href='index.jsp' class='btn btn-primary aerror'><span class='glyphicon glyphicon-home'></span> Volver </button></a>");
             }
         %> 
     </body>

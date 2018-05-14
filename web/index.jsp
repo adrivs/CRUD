@@ -30,6 +30,11 @@
                 <div class="login">
                     <div class="row">
                         <div class="col-md-12">
+                            <h1 id="titulo">Coleccionismo<br> de guitarras</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
                     <h1>Login</h1>
                         </div>
                     <form method="post">

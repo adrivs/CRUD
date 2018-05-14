@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+        <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
         <title>Listado de usuarios</title>
     </head>
     <body class="colBody">
@@ -31,19 +31,29 @@
                     Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/venta", "root", "");
                     Statement s = conexion.createStatement();
                     ResultSet listado = s.executeQuery("SELECT guitarra.marca, guitarra.modelo, guitarra.numSerie, coleccionista.codigo, coleccionista.nombre, coleccionista.apellidos FROM guitarra JOIN coleccionista ON guitarra.numSerie=coleccionista.numSerie");
+
+                    Statement s2 = conexion.createStatement();
+                    ResultSet listado2 = s2.executeQuery("SELECT guitarra.marca, guitarra.modelo, guitarra.numSerie FROM guitarra");
+
                 %>
 
-                
-                
-                
+
+
+
                 <table class="table table-striped">
                     <tr><th>Código</th><th>Nombre</th><th>Apellidos</th><th>Guitarra</th></tr>
                     <form method="get" action="grabaCol.jsp">
                         <tr>
-                            <td><input type="text" name="codigo" size="20"></td>
+                            <td><input type="text" name="codigo" size="20" required></td>
                             <td><input type="text" name="nombre" size="40"></td>
                             <td><input type="text" name="apellidos" size="40"></td>
-                            <td><input type="text" name="numSerie" size="20"></td>
+                            <td><select name="guitQueTiene">
+                                    <%      while (listado2.next()) {
+                                            out.print("<option value=" + listado2.getString("numSerie") + ">" + listado2.getString("marca") + " " + listado2.getString("modelo") + "</option>");
+                                            
+                                        }
+                                    %>
+                                </select></td>
                             <td><button type="submit" value="Añadir" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span></button></td><td></td>
                         </tr>           
                     </form>
@@ -53,8 +63,8 @@
                             out.println(listado.getString("codigo") + "</td>");
                             out.println("<td>" + listado.getString("nombre") + "</td>");
                             out.println("<td>" + listado.getString("apellidos") + "</td>");
-                            out.println("<td>" +  listado.getString("marca") + " " + listado.getString("modelo")+ "<br>"  + "Nº de serie:" + " " + listado.getString("numSerie") + "</td>");
-                            
+                            out.println("<td>" + listado.getString("marca") + " " + listado.getString("modelo") + "<br>" + "Nº de serie:" + " " + listado.getString("numSerie") + "</td>");
+
                     %>
                     <td>
                         <form method="get" action="modificaCol.jsp">
@@ -62,7 +72,7 @@
                             <input type="hidden" name="nombre" value="<%=listado.getString("nombre")%>">
                             <input type="hidden" name="apellidos" value="<%=listado.getString("apellidos")%>">
                             <input type="hidden" name="numSerie" value="<%=listado.getString("numSerie")%>">
-                            
+
                             <button type="submit"  class="btn btn-info"><span class="glyphicon glyphicon-pencil"></span></button>
                         </form>
                     </td>

@@ -28,7 +28,7 @@
 <br><br>
 <div class="panel panel-info">
     <div class="panel-heading text-center" style="background: rgb(218,165,32);"><p class="mod"> Modificación de usuario</p></div>
-<form method="get" action="grabaColModificado.jsp">
+<form method="get" action="grabaColModificado.jsp" style="margin-top: 20px;">
 <div class="form-group">
 <label>&nbsp;&nbsp;Código:&nbsp;</label><input type="text" size="5" name="codigo" value="<%= request.getParameter("codigo") %>">
 </div>
@@ -39,7 +39,7 @@
 <label>&nbsp;&nbsp;Apellidos:&nbsp;</label><input type="text" name="apellidos" size="5" value="<%= request.getParameter("apellidos") %>">
 </div>
 <div class="form-group">
-<label>&nbsp;&nbsp;Nº Serie:&nbsp;</label><input type="text" name="numSerie" size="5" value="<%= request.getParameter("apellidos") %>">
+<label>&nbsp;&nbsp;Nº Serie:&nbsp;</label><input type="text" name="numSerie" size="5" value="<%= request.getParameter("numSerie") %>">
 </div>
 <hr>
 &nbsp;&nbsp;<a href="listadoCol.jsp" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></a>

@@ -29,7 +29,7 @@
 <div class="panel panel-info">
     <div class="panel-heading text-center" style="background: rgb(218,165,32);"><p class="mod"> Modificación de guitarra</p></div>
 <form method="get" action="grabaGuitarraModificada.jsp">
-<div class="form-group">
+<div class="form-group" style="margin-top: 20px;">
 <label>&nbsp;&nbsp;Nº de serie:&nbsp;</label><input type="text" size="5" name="numSerie" value="<%= request.getParameter("numSerie") %>">
 </div>
 <div class="form-group">
