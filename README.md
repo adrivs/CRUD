@@ -1,4 +1,4 @@
-# CRUD
+# CRUD :computer:
 
 Con este CRUD podrás administrarte tu colección de guitarras. 🎸
 
@@ -15,6 +15,6 @@ Con este CRUD podrás administrarte tu colección de guitarras. 🎸
 <img src="Capturas/listadoCol.PNG">
 <img src="Capturas/modificaUsuario.PNG">
 
-## Esquema de la base de datos
+## Esquema de la base de datos :key:
 <img src="Capturas/basedatos.PNG">
 
