@@ -7,10 +7,10 @@ Con este CRUD podrás administrarte tu colección de guitarras.
 
 
 ## Index
-<img src="Capturas/login.JPG">
+<img src="Capturas/login.PNG">
 
 ## Listados y ventana de añadir fila
-<img src="Capturas/listadoGuit.png>
-<img src="Capturas/modificaGuit.png">
-<img src="Capturas/listadoCol.png">
-<img src="Capturas/modificaUsuario.png">
+<img src="Capturas/listadoGuit.PNG">
+<img src="Capturas/modificaGuit.PNG">
+<img src="Capturas/listadoCol.PNG">
+<img src="Capturas/modificaUsuario.PNG">
