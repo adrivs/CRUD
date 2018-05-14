@@ -14,3 +14,7 @@ Con este CRUD podrás administrarte tu colección de guitarras. 🎸
 <img src="Capturas/modificaGuit.PNG">
 <img src="Capturas/listadoCol.PNG">
 <img src="Capturas/modificaUsuario.PNG">
+
+## Esquema de la base de datos
+<img src="Capturas/basedatos.PNG">
+
