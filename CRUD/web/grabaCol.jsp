@@ -27,7 +27,7 @@
             String insercion = "INSERT INTO coleccionista VALUES (" + "'" + request.getParameter("codigo")
                     + "', '" + request.getParameter("nombre")
                     + "', '" + request.getParameter("apellidos")
-                    + "', '" +request.getParameter("numSerie")
+                    + "', '" +request.getParameter("guitQueTiene")
                     + "')";
             
             s.execute(insercion);

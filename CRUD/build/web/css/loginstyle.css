@@ -13,7 +13,7 @@ and open the template in the editor.
 }
 
 .container h1 {
-    margin-top: 200px;
+    margin-top: 100px;
     color: white;
     font-size: 3.5em;
     
@@ -45,5 +45,26 @@ body {
 }
 
 .autor {
-    margin-top: 230px;
+    margin-top: 200px;
+}
+
+#titulo {
+    margin-top: 10px;
+    text-align: left;
+    
+}
+
+.error p{
+    
+    color: white;
+    font-family: 'Do Hyeon', sans-serif;
+    text-align: center;
+    font-size: 3.5em;
+    margin-top: 250px;
+}
+
+.aerror{
+    color: white;
+    margin-left: 620px;
+    font-size: 2em;
 }
