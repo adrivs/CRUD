@@ -12,6 +12,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
         <title>
         </title>
     </head>
