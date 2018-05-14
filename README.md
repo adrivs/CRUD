@@ -1,6 +1,6 @@
 # CRUD
 
-Con este CRUD podrás administrarte tu colección de guitarras.
+Con este CRUD podrás administrarte tu colección de guitarras. 🎸
 
 # Capturas
 
